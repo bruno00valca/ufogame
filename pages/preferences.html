@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+  <form id="preferencesForm"
+        class="p-4 border rounded-4 bg-dark text-light shadow-lg"
+        style="width: 100%; max-width: 400px;">
+    <fieldset>
+      <legend class="text-center mb-4 fw-bold text-info">
+        🎮 Game Preferences
+      </legend>
+
+      <div class="mb-3">
+        <label for="numUfos" class="form-label">Number of UFOs</label>
+        <select id="numUfos" class="form-select bg-secondary text-light border-0">
+          <option value="1">1</option>
+          <option value="5" selected>5</option>
+          <option value="9">9</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="gameTime" class="form-label">Game Time (seconds)</label>
+        <select id="gameTime" class="form-select bg-secondary text-light border-0">
+          <option value="60" selected>60</option>
+          <option value="120">120</option>
+          <option value="180">180</option>
+        </select>
+      </div>
+
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="doubleSpeed" />
+        <label class="form-check-label" for="doubleSpeed">
+          Double speed when UFOs reach half
+        </label>
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary px-4">
+          <i class="bi bi-save"></i> Save
+        </button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<div id="statusMsg" class="mt-3 text-center fw-bold"></div>
