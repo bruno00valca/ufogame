@@ -12,6 +12,9 @@ function changeContent(page) {
         case "preferences":
           initPreferences();
           break;
+        case "register":
+          initRegister();
+          break;
         case "login":
           initLogin();
           break;
